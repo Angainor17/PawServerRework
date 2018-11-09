@@ -1,1 +1,1 @@
-include ':app', ':paw-server'
+include ':app'//, ':paw-server'

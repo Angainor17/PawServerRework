@@ -31,7 +31,6 @@ public class BuildOwnPawServerActivity extends PawServerActivity implements Serv
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		TAG = "BuildOwnPawServer";
-		PawSer
 		
 		/*
 		 * Defines the installation directory.

@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+//    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "de.fun2code.android.buildownpawserver"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion 8
+        targetSdkVersion 25
     }
 
     buildTypes {
@@ -18,17 +19,11 @@ android {
 }
 
 dependencies {
-//    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation fileTree(dir: 'libs', include: '*.jar')
-//    implementation files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/brazil.jar')
-//    implementation files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/bsh-2.1.8.jar')
-//    implementation files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/commons-codec.jar')
-//    implementation files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/jdom-android.jar')
-//    implementation files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/paw-server.jar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
 
-//    implementation files('libs/brazil.jar')
-//    implementation files('libs/bsh-2.1.8.jar')
-//    implementation files('libs/commons-codec.jar')
-//    implementation files('libs/jdom-android.jar')
-//    implementation files('libs/paw-server.jar')
+//    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/brazil.jar')
+//    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/bsh-2.1.8.jar')
+//    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/commons-codec.jar')
+//    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/jdom-android.jar')
+//    compile files('/home/joschi/AndroidStudioProjects/BuildOwnPawServer/libs/paw-server.jar')
 }
